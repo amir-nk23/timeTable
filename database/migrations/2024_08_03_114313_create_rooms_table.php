@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('rooms', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger('code');
+            $table->timestamp('start_time');
+            $table->timestamp('end_date');
+            $table->boolean('status');
             $table->timestamps();
         });
     }
