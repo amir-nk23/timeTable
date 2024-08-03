@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('times', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('room_id');
+            $table->unsignedBIgInteger('room_id');
             $table->foreign('room_id')->references('id')->on('rooms')->onDelete('cascade');
             $table->timestamp('start_time');
-            $table->timestamp('end_time');
+            $table->timestamp('end_time',precision: 0)->default(now());
             $table->unsignedInteger('day');
             $table->string('label');
             $table->timestamps();

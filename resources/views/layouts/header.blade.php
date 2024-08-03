@@ -21,7 +21,8 @@
     <!-- Style css -->
     <link href="{{asset('assets/css-rtl/style.css')}}" rel="stylesheet" />
     <link href="{{asset('assets/css-rtl/dark.css')}}" rel="stylesheet" />
-    <link href="{{asset('assets/css-rtl/skin-modes.css"')}}" rel="stylesheet" />
+    <link href="{{asset('assets/css-rtl/skin-modes.css')}}" rel="stylesheet" />
+    <link href="{{asset('assets/css-rtl/style-rtl.css')}}" rel="stylesheet" />
 
     <!-- Animate css -->
     <link href="{{asset('assets/css-rtl/animated.css')}}" rel="stylesheet" />
@@ -49,3 +50,4 @@
 <div id="global-loader" >
     <img src="../../assets/images/svgs/loader.svg" alt="loader">
 </div>
+

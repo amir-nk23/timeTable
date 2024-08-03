@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('classes', function (Blueprint $table) {
             $table->id();
             $table->string('color');
-            $table->unsignedInteger('teacher_id');
+            $table->unsignedBigInteger('teacher_id');
             $table->foreign('teacher_id')->references('id')->on('teachers')->onDelete('cascade');
             $table->timestamp('start_date');
-            $table->timestamp('end_date');
+            $table->timestamp('end_date')->default(now());
             $table->enum('status',['progress','finished','enrolling']);
             $table->timestamps();
         });

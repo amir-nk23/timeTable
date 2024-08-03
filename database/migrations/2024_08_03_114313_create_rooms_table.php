@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedInteger('code');
             $table->timestamp('start_time');
-            $table->timestamp('end_date');
+            $table->timestamp('end_date')->default(now());
             $table->boolean('status');
             $table->timestamps();
         });
